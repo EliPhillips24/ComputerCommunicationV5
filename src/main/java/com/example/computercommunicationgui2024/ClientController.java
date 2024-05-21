@@ -11,6 +11,17 @@ public class ClientController extends ClientServerController {
     public TextField To;
     public TextField messageTyped;
 
+    public TextField UPL;
+    public TextField UPM;
+    public TextField UPR;
+    public TextField MIL;
+    public TextField MIM;
+    public TextField MIR;
+    public TextField DOL;
+    public TextField DOM;
+    public TextField DOR;
+
+
     MyCoolDataStructure queue;
     ClientConnection serverConnection;
 
@@ -43,5 +54,12 @@ public class ClientController extends ClientServerController {
         CommunicationData data1 = new CommunicationData(From.getText(), To.getText(), messageTyped.getText(), 0);
         serverConnection.getObjOut().writeObject(data1);
         System.out.println("ClientController sendMessage() wrote: " + data1);
+        System.out.println("Message Typed" + messageTyped.getText());
+        this.TicTacTo();
+    }
+    public void TicTacTo() throws Exception{
+        if(messageTyped.getText().equals("UL") ){
+            UPL.setText("X");
+        }
     }
 }
