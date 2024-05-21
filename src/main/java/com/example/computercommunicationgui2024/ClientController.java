@@ -58,8 +58,11 @@ public class ClientController extends ClientServerController {
         this.TicTacTo();
     }
     public void TicTacTo() throws Exception{
-        if(messageTyped.getText().equals("UL") ){
+        if(messageTyped.getText().equals("UL") && From.getText().equals("Eli") ){
             UPL.setText("X");
+        }
+        if(messageTyped.getText().equals("UL") && From.getText().equals("Jadan") ){
+            UPL.setText("O");
         }
     }
 }
