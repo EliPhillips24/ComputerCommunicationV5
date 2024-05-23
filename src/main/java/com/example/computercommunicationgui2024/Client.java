@@ -6,11 +6,11 @@ import java.net.Socket;
 
 public class Client {
     static MyCoolDataStructure queue;
-    public static void main(String[] args) throws Exception {
+    public void main(String[] args) throws Exception {
 
         // Controller.initialize()
         System.out.println("Connecting to my server");
-        Socket newSocket = new Socket("10.37.152.44",1984);
+        Socket newSocket = new Socket("10.37.153.179",1984);
         queue = new MyCoolDataStructure();
         ClientConnection newClient = new ClientConnection(newSocket);
 
