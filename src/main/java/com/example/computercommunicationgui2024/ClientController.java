@@ -9,17 +9,7 @@ import java.net.Socket;
 public class ClientController extends ClientServerController {
     public TextField From;
     public TextField To;
-    public TextField messageTyped;
-
-    public TextField UPL;
-    public TextField UPM;
-    public TextField UPR;
-    public TextField MIL;
-    public TextField MIM;
-    public TextField MIR;
-    public TextField DOL;
-    public TextField DOM;
-    public TextField DOR;
+    public static TextField messageTyped;
 
 
     MyCoolDataStructure queue;
@@ -55,14 +45,6 @@ public class ClientController extends ClientServerController {
         serverConnection.getObjOut().writeObject(data1);
         System.out.println("ClientController sendMessage() wrote: " + data1);
         System.out.println("Message Typed" + messageTyped.getText());
-        this.TicTacTo();
     }
-    public void TicTacTo() throws Exception{
-        if(messageTyped.getText().equals("UL") && From.getText().equals("Eli") ){
-            UPL.setText("X");
-        }
-        if(messageTyped.getText().equals("UL") && From.getText().equals("Jadan") ){
-            UPL.setText("O");
-        }
-    }
+
 }

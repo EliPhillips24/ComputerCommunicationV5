@@ -24,6 +24,8 @@ public class ServerController extends ClientServerController {
     static ServerSocketConnector connector;
     static Thread connectorThread;
 
+
+
     public void initialize() {
         clientIPsColumn.setCellValueFactory(new PropertyValueFactory<ClientConnection, String>("clientIP"));
         nameColumn.setCellValueFactory(new PropertyValueFactory<ClientConnection, String>("name"));
@@ -37,4 +39,5 @@ public class ServerController extends ClientServerController {
         connectorThread = new Thread(connector);
         connectorThread.start();
     }
+
 }

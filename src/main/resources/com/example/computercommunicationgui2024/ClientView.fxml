@@ -23,14 +23,5 @@
             <TableColumn fx:id="messageColumn" prefWidth="321.0" text="Message" />
         </columns>
       </TableView>
-      <TextField fx:id="UPL" layoutX="23.0" layoutY="546.0" prefHeight="26.0" prefWidth="31.0" />
-      <TextField fx:id="MIM" layoutX="64.0" layoutY="582.0" prefHeight="26.0" prefWidth="31.0" />
-      <TextField fx:id="MIL" layoutX="23.0" layoutY="582.0" prefHeight="26.0" prefWidth="31.0" />
-      <TextField fx:id="UPR" layoutX="107.0" layoutY="546.0" prefHeight="26.0" prefWidth="31.0" />
-      <TextField fx:id="UPM" layoutX="64.0" layoutY="546.0" prefHeight="26.0" prefWidth="31.0" />
-      <TextField fx:id="MIR" layoutX="107.0" layoutY="582.0" prefHeight="26.0" prefWidth="31.0" />
-      <TextField fx:id="DOL" layoutX="22.0" layoutY="616.0" prefHeight="26.0" prefWidth="31.0" />
-      <TextField fx:id="DOR" layoutX="106.0" layoutY="616.0" prefHeight="26.0" prefWidth="31.0" />
-      <TextField fx:id="DOM" layoutX="63.0" layoutY="616.0" prefHeight="26.0" prefWidth="31.0" />
    </children>
 </Pane>
